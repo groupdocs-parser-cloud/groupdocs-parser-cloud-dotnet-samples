@@ -29,8 +29,8 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     FileInfo = fileInfo
                 };
 
-                var request = new GetContainerInfoRequest(options);
-                var response = apiInstance.GetContainerInfo(request);
+                var request = new ContainerRequest(options);
+                var response = apiInstance.Container(request);
 
                 foreach (var item in response.ContainerItems)
                 {

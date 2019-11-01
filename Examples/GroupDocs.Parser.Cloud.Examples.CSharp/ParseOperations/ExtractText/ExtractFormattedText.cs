@@ -18,7 +18,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
 
             try
             {
-                var options = new ExtractTextOptions
+                var options = new TextOptions
                 {
                     FileInfo = new FileInfo
                     {
@@ -31,8 +31,8 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     }
                 };
 
-                var request = new ExtractTextRequest(options);
-                var response = apiInstance.ExtractText(request);
+                var request = new TextRequest(options);
+                var response = apiInstance.Text(request);
                 Console.WriteLine($"Text: {response.Text}");
             }
             catch (Exception e)

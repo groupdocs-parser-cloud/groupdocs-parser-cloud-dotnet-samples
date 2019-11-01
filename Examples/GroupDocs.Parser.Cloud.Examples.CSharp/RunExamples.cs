@@ -36,7 +36,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
 
             //ParseByTemplateDefinedAsAnObject.Run();
 
-            ParseByTemplateOfADocumentInsideAContainer.Run();
+            //ParseByTemplateOfADocumentInsideAContainer.Run();
 
             #endregion
 

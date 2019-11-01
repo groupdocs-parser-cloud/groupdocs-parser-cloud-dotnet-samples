@@ -31,8 +31,8 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     CountPagesToExtract = 1
                 };
 
-                var request = new ExtractImagesRequest(options);
-                var response = apiInstance.ExtractImages(request);
+                var request = new ImagesRequest(options);
+                var response = apiInstance.Images(request);
                 foreach (var page in response.Pages)
                 {
                     Console.WriteLine($"Images from {page.PageIndex} page.");

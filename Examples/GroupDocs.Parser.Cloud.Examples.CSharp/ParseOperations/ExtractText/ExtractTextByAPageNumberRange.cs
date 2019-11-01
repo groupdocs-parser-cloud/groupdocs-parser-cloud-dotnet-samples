@@ -18,7 +18,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
 
             try
             {
-                var options = new ExtractTextOptions
+                var options = new TextOptions
                 {
                     FileInfo = new FileInfo
                     {
@@ -29,8 +29,8 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     CountPagesToExtract = 1
                 };
 
-                var request = new ExtractTextRequest(options);
-                var response = apiInstance.ExtractText(request);
+                var request = new TextRequest(options);
+                var response = apiInstance.Text(request);
                 foreach (var page in response.Pages)
                 {
                     Console.WriteLine($"PageIndex: {page.PageIndex}. Text: {page.Text}");

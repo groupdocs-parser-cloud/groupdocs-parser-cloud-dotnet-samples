@@ -25,9 +25,9 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     Template = TemplateUtils.GetTemplate()
                 };
 
-                var request = new ParseDocumentRequest(options);
+                var request = new ParseRequest(options);
 
-                var response = apiInstance.ParseDocument(request);
+                var response = apiInstance.Parse(request);
 
                 foreach (var data in response.FieldsData)
                 {
