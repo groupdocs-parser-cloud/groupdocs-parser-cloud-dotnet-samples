@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Parser.Cloud.Sdk, Version=19.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Parser-Cloud.19.11.0\lib\net20\GroupDocs.Parser.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Parser.Cloud.Sdk, Version=20.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Parser-Cloud.20.6.0\lib\net20\GroupDocs.Parser.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net20\Newtonsoft.Json.dll</HintPath>

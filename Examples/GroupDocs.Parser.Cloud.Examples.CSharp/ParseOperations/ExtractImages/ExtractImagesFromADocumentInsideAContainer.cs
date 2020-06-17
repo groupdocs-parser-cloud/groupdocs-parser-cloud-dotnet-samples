@@ -39,6 +39,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                     foreach (var image in page.Images)
                     {
                         Console.WriteLine($"Image path in storage: {image.Path}. Download url: {image.DownloadUrl}");
+                        Console.WriteLine($"File format: {image.FileFormat}. Page index: {image.PageIndex}");
                     }
                 }
             }
