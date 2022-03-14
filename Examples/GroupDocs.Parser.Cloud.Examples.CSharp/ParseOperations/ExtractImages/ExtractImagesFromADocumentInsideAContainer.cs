@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("ExtractImagesFromADocumentInsideAContainer");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new ParseApi(configuration);
 
@@ -42,10 +43,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                         Console.WriteLine($"File format: {image.FileFormat}. Page index: {image.PageIndex}");
                     }
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling ParseApi: " + e.Message);
+                Console.WriteLine("Exception while calling ParseApi: " + e.Message + "\n");
             }
         }
     }

@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("GetContainerItemsInformation");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new InfoApi(configuration);
 
@@ -36,10 +37,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                 {
                     Console.WriteLine($"Name: {item.Name}. FilePath: {item.FilePath}");
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling InfoApi: " + e.Message);
+                Console.WriteLine("Exception while calling InfoApi: " + e.Message + "\n");
             }
         }
     }

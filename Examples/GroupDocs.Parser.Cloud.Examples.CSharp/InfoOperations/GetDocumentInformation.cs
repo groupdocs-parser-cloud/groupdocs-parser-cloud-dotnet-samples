@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("GetDocumentInformation");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new InfoApi(configuration);
 
@@ -34,10 +35,12 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
 
                 var response = apiInstance.GetInfo(request);
                     Console.WriteLine("InfoResult.PageCount: " + response.PageCount);
+
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling InfoApi: " + e.Message);
+                Console.WriteLine("Exception while calling InfoApi: " + e.Message + "\n");
             }
         }
     }

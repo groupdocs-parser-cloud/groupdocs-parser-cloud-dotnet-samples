@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("CreateOrUpdateTemplate");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new TemplateApi(configuration);
 
@@ -29,10 +30,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                 var response = apiInstance.CreateTemplate(request);
 
                 Console.WriteLine($"Path to saved template in storage: {response.TemplatePath}. Link to download template: {response.Url}");
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling TemplateApi: " + e.Message);
+                Console.WriteLine("Exception while calling TemplateApi: " + e.Message + "\n");
             }
         }
     }

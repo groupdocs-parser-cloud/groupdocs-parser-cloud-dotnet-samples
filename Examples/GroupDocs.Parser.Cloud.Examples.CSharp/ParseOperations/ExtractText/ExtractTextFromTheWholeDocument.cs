@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("ExtractTextFromTheWholeDocument");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
             var apiInstance = new ParseApi(configuration);
 
@@ -30,10 +31,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                 var request = new TextRequest(options);
                 var response = apiInstance.Text(request);
                 Console.WriteLine($"Text: {response.Text}");
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling ParseApi: " + e.Message);
+                Console.WriteLine("Exception while calling ParseApi: " + e.Message + "\n");
             }
         }
     }

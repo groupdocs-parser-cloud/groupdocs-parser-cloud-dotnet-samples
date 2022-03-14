@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("ParseByTemplateStoredInUserStorage");
             // For example purposes create template if not exists.
             TemplateUtils.CreateIfNotExist("templates/companies.json");
 
@@ -49,10 +50,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                         }
                     }
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling ParseApi: " + e.Message);
+                Console.WriteLine("Exception while calling ParseApi: " + e.Message + "\n");
             }
         }
     }

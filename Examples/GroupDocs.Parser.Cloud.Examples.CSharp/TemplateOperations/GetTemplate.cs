@@ -13,6 +13,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
     {
         public static void Run()
         {
+            Console.WriteLine("GetTemplate");
             // For example purposes create template if not exists.
             TemplateUtils.CreateIfNotExist("templates/template-for-companies.json");
             var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
@@ -40,10 +41,11 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
                 {
                     Console.WriteLine($"Table: {table.TableName}");
                 }
+                Console.WriteLine();
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception while calling TemplateApi: " + e.Message);
+                Console.WriteLine("Exception while calling TemplateApi: " + e.Message + "\n");
             }
         }
     }
