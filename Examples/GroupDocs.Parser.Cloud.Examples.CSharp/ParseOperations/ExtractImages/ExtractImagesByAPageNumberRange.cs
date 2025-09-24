@@ -1,8 +1,9 @@
-﻿using GroupDocs.Parser.Cloud.Sdk.Api;
+﻿
+using System;
+using GroupDocs.Parser.Cloud.Sdk.Api;
 using GroupDocs.Parser.Cloud.Sdk.Client;
 using GroupDocs.Parser.Cloud.Sdk.Model;
 using GroupDocs.Parser.Cloud.Sdk.Model.Requests;
-using System;
 
 namespace GroupDocs.Parser.Cloud.Examples.CSharp
 {
