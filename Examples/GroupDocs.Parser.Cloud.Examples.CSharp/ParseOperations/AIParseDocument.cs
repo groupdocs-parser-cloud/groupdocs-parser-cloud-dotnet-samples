@@ -17,7 +17,7 @@ namespace GroupDocs.Parser.Cloud.Examples.CSharp
             {
                 FileInfo = new FileInfo
                 {
-                    FilePath = "invoices/invoice.pdf",
+                    FilePath = "pdf/Invoice.pdf",
                     StorageName = Common.MyStorage
                 },
                 Template = new
